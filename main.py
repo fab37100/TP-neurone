@@ -107,7 +107,7 @@ def main():
         print('\033[93m' + """Merci d'entrer l'un des paramètres suivants:
 --creation = Créer un nouveau neurone
 --apprentissage = Reutiliser le neurone de la dernière session afin de l'affiner
---comparaison = Génére un graphe juxtaposant la courbe trouvé par le neurone et celle désirée""" + '\033[0m')
+--comparaison = Génére un graphe représentant des points calculé par le neurone et la courbe de la fonction désirée""" + '\033[0m')
 
     print("""
 ############################
