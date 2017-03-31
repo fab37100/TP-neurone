@@ -4,7 +4,7 @@
 ## Utilisation du script
 le script s'exécute depuis le fichier "main.py" et prend en compte des paramètres. Un seul paramètre peut être utilisé à la fois:
 - --creation : créer un neurone et l'enregistre dans un fichier .bak à la racine de l'exécution
- <code>main.py --creation</code>
+ <pre>main.py --creation</pre>
 - --apprentissage : affine le neurone pour se rapprocher du plus possible de la fonction
 <pre>main.py --apprentissage</pre>
 - --comparaison : génère un graphe sur lequel sont présentes 10 valeurs calculées par le neurone superposé à la fonction
@@ -47,7 +47,7 @@ Sauvegarde du neurone dans le fichier neurone.bak
 
 ### Comparaison sans apprentissage
 Le script va créer un graphe représentant 10 valeurs calculé par le neurone et la fonction à s'approcher le plus possible
-```python
+```
 >>>main.py --comparaison
     
 ############################
@@ -74,7 +74,8 @@ La **ligne** **noir** correspond à la fonction qu'il faut trouver et les <span 
 On peut voir que le neurone est plutôt loin de la fonction sans apprentissage.
 ### Apprentissage du neurone
 Le neurone va modifier sont biais et son poids afin d'être le plus proche possible de la fonction
-<pre>>>>main.py --apprentissage
+```
+>>>main.py --apprentissage
     
 ############################
 ##   Début du traitement  ##
@@ -92,10 +93,12 @@ Nouveau Biais : -0.2641461917035273   | Nouveau poids : 3.0672470043545905
 ##   Fin du traitement    ##
 ############################
 
-Sauvegarde du neurone dans le fichier neurone.bak</pre>
+Sauvegarde du neurone dans le fichier neurone.bak
+```
 
 ## Comparaison avec apprentissage
-<pre>>>>main.py --comparaison
+```
+>>>main.py --comparaison
     
 ############################
 ##   Début du traitement  ##
@@ -111,5 +114,6 @@ Affichage de la comparaison sur un graphe
 ##   Fin du traitement    ##
 ############################
 
-Sauvegarde du neurone dans le fichier neurone.bak</pre>
+Sauvegarde du neurone dans le fichier neurone.bak
+```
 ![ComparaisonAvecApprentissage](https://github.com/fab37100/TP-neurone/blob/master/images/2.png "graphe avec apprentissage")
