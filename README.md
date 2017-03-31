@@ -46,7 +46,9 @@ Sauvegarde du neurone dans le fichier neurone.bak
 </pre>
 
 ### Comparaison sans apprentissage
-<pre>############################
+<pre>>>>main.py --comparaison
+    
+############################
 ##   Début du traitement  ##
 ############################
     
