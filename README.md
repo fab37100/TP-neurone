@@ -4,7 +4,7 @@
 ## Utilisation du script
 le script s'exécute depuis le fichier "main.py" et prend en compte des paramètres. Un seul paramètre peut être utilisé à la fois:
 - --creation : créer un neurone et l'enregistre dans un fichier .bak à la racine de l'exécution
- <pre>main.py --creation</pre>
+ <code>main.py --creation</code>
 - --apprentissage : affine le neurone pour se rapprocher du plus possible de la fonction
 <pre>main.py --apprentissage</pre>
 - --comparaison : génère un graphe sur lequel sont présentes 10 valeurs calculées par le neurone superposé à la fonction
