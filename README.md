@@ -64,4 +64,4 @@ Sauvegarde du neurone dans le fichier neurone.bak
 
 Sauvegarde du neurone dans le fichier neurone.bak
  </pre>
- ![Google logo](https://www.google.fr/images/srpr/logo11w.png "google logo")
+ ![ComparaisonSansApprentissage](https://github.com/fab37100/TP-neurone/blob/master/images/1.png "graphe sans représentation")
