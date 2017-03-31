@@ -66,8 +66,7 @@ Affichage de la comparaison sur un graphe
 Sauvegarde du neurone dans le fichier neurone.bak
  </pre>
  
-<p>La **ligne noir** correspond à la fonction qu'il faut trouver
-Et les **<span style="color:red">points rouges</span>** correspondent aux valeurs calculées par le neurone</p>
+<p>La **ligne noir** correspond à la fonction qu'il faut trouver et les **<span style="color:red">points rouges</span>** correspondent aux valeurs calculées par le neurone</p>
 
  ![ComparaisonSansApprentissage](https://github.com/fab37100/TP-neurone/blob/master/images/1.png "graphe sans apprentissage")
 
