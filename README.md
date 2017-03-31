@@ -47,7 +47,8 @@ Sauvegarde du neurone dans le fichier neurone.bak
 
 ### Comparaison sans apprentissage
 Le script va créer un graphe représentant 10 valeurs calculé par le neurone et la fonction à s'approcher le plus possible
-<pre>>>>main.py --comparaison
+```python
+>>>main.py --comparaison
     
 ############################
 ##   Début du traitement  ##
@@ -64,7 +65,7 @@ Affichage de la comparaison sur un graphe
 ############################
 
 Sauvegarde du neurone dans le fichier neurone.bak
- </pre>
+```
  
 La **ligne** **noir** correspond à la fonction qu'il faut trouver et les <span style="color:red">**points** **rouges**</span> correspondent aux valeurs calculées par le neurone
 
