@@ -3,10 +3,14 @@ import getopt
 import pickle
 import sys
 
+# region Définition des variables
+
 a = 3
 b = 4
 nom_fichier = "neurone.bak"
 
+
+# endregion
 
 # region Définition de la classe Neurone
 
@@ -17,14 +21,16 @@ class Neurone:
         self.biais = uniform(-1, 1)
 
     # Enregistrement du neurone avant ça destruction
-    def __del__(self):
+    def sauvegarde(self):
         print("Sauvegarde du neurone dans le fichier " + str(nom_fichier))
         with open(nom_fichier, "wb") as f:
             pickle.dump(self, f, protocol=2)
+        print("poids : " + str(self.poids) + " biais : " + str(self.biais))
 
     # Chargement du neurone depuis le fichier .bak
     def chargement(self):
-        with open(nom_fichier, "wb") as f:
+        with open(nom_fichier, "rb") as f:
+            # pickle.dump(self, f, protocol=2)
             contenu_fichier = pickle.load(f)
             self.poids = contenu_fichier.poids
             self.biais = contenu_fichier.biais
@@ -43,13 +49,29 @@ class Neurone:
 
 def main():
     print('Démarrage du neurone')
-    resultat = []
-    for i in range(0, 100):
-        x = uniform(0, 100)
-        y = a * x + b
-        resultat.append([x, y])
-        # print(resultat[i][1])
 
+    # Récupération des paramètres d'entrée
+    opts, args = getopt.getopt(sys.argv, "hrl:ac", ["recharger", "comparaison"])
+
+    if "--recharger" in args:
+        print("Chargement de l'ancien neurone")
+        neurone = Neurone()
+        neurone.chargement()
+        resultat = []
+        for i in range(0, 1000):
+            x = uniform(0, 50)
+            y = a * x + b
+            resultat.append([x, y])
+            r = neurone.apprentissage(x, y)
+            if r == y:
+                print("Nous l'avons fait !")
+        # print("Nouveau biais : " + str(neurone.biais) + "\nNouveau poids : " + str(neurone.poids))
+        neurone.sauvegarde()
+    else:
+        print("Création d'un nouveau neurone")
+        neurone = Neurone()
+        print("Biais : " + str(neurone.biais) + "\nPoids : " + str(neurone.poids))
+        neurone.sauvegarde()
 
 if __name__ == '__main__':
     main()
