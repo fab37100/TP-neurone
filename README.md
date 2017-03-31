@@ -46,6 +46,7 @@ Sauvegarde du neurone dans le fichier neurone.bak
 </pre>
 
 ### Comparaison sans apprentissage
+Le script va créer un graphe représentant 10 valeurs calculé par le neurone et la fonction à s'approcher le plus possible
 <pre>>>>main.py --comparaison
     
 ############################
@@ -56,7 +57,7 @@ Voici les récupérées :
 Poids : 0.429503827620187
 Biais : -0.6719747569826
 Sauvegarde du neurone dans le fichier neurone.bak
-<span style="color:green">Affichage de la comparaison sur un graphe</span>
+Affichage de la comparaison sur un graphe
     
 ############################
 ##   Fin du traitement    ##
@@ -64,6 +65,10 @@ Sauvegarde du neurone dans le fichier neurone.bak
 
 Sauvegarde du neurone dans le fichier neurone.bak
  </pre>
+ 
+<p>La **ligne noir** correspond à la fonction qu'il faut trouver
+Et les **<span style="color:red">points rouges</span>** correspondent aux valeurs calculées par le neurone</p>
+
  ![ComparaisonSansApprentissage](https://github.com/fab37100/TP-neurone/blob/master/images/1.png "graphe sans apprentissage")
 
 On peut voir que le neurone est plutôt loin de la fonction sans apprentissage.
