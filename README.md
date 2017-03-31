@@ -23,7 +23,7 @@ Si aucun paramètres n'est fourni, le script renverra une aide à l'utilisateur
 ############################
 ##   Fin du traitement    ##
 ############################</pre>
-##Scénario
+## Scénario
 <p>Ce jeux de donnée met en évidence l'évolution d'un neurone</p>
 
 ### Création du neurone
@@ -64,4 +64,47 @@ Sauvegarde du neurone dans le fichier neurone.bak
 
 Sauvegarde du neurone dans le fichier neurone.bak
  </pre>
- ![ComparaisonSansApprentissage](https://github.com/fab37100/TP-neurone/blob/master/images/1.png "graphe sans représentation")
+ ![ComparaisonSansApprentissage](https://github.com/fab37100/TP-neurone/blob/master/images/1.png "graphe sans apprentissage")
+
+On peut voir que le neurone est plutôt loin de la fonction sans apprentissage.
+### Apprentissage du neurone
+Le neurone va modifier sont biais et son poids afin d'être le plus proche possible de la fonction
+<pre>>>>main.py --apprentissage
+    
+############################
+##   Début du traitement  ##
+############################
+    
+Chargement de l'ancien neurone
+Voici les récupérées :
+Poids : 0.429503827620187
+Biais : -0.6719747569826
+Sauvegarde du neurone dans le fichier neurone.bak
+    
+Nouveau Biais : -0.2641461917035273   | Nouveau poids : 3.0672470043545905
+    
+############################
+##   Fin du traitement    ##
+############################
+
+Sauvegarde du neurone dans le fichier neurone.bak</pre>
+
+## Comparaison avec apprentissage
+<pre>>>>main.py --comparaison
+    
+############################
+##   Début du traitement  ##
+############################
+    
+Voici les récupérées :
+Poids : 3.0672470043545905
+Biais : -0.2641461917035273
+Sauvegarde du neurone dans le fichier neurone.bak
+Affichage de la comparaison sur un graphe
+    
+############################
+##   Fin du traitement    ##
+############################
+
+Sauvegarde du neurone dans le fichier neurone.bak</pre>
+![ComparaisonAvecApprentissage](https://github.com/fab37100/TP-neurone/blob/master/images/2.png "graphe avec apprentissage")
