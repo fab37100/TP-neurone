@@ -97,6 +97,8 @@ Sauvegarde du neurone dans le fichier neurone.bak
 ```
 
 ## Comparaison avec apprentissage
+Après l'apprentissage en voit que le neurone c'est adapté à la situation afin de se rapprocher le plus possible à la fonction.
+
 ```
 >>>main.py --comparaison
     
